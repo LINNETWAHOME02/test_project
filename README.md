@@ -85,3 +85,25 @@ git rm -r --cached .venv
 git commit -m "Remove virtual environment from version control and updated README.md"
 git push
 ```
+
+## 7. Fork
+Forked beccanj/geoflexwebsite, made changes a text file and created a pull request
+```
+# Cloned the repo into my local machine
+git clone https://github.com/LINNETWAHOME02/geoflexwebsite.git
+cd geoflexwebsite
+
+# Set up a remote for the original  repo
+git remote add upstream https://github.com/beccanj/geoflexwebsite.git
+
+# Created my own branch
+git checkout -b linnet
+
+# Made changes in dont_look.txt
+nano dont_look.txt
+
+# Staged and committed my changes
+git add .
+git commit -m 'Changes by linnet'
+git push
+```
